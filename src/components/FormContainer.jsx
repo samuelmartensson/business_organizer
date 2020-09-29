@@ -166,9 +166,7 @@ const FormWrapper = styled(BoxShadowContainer)`
   display: grid;
   width: 100%;
   place-items: center;
-  input {
-    padding: 5px;
-  }
+
   .input-wrap {
     display: flex;
     flex-direction: column;

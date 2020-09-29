@@ -1,5 +1,6 @@
 import React from 'react';
 import UserKit from '../data/UserKit';
+import styled from 'styled-components';
 
 export default function FormInputElement({ label, handleChange, value }) {
   const userKit = new UserKit();
@@ -12,7 +13,13 @@ export default function FormInputElement({ label, handleChange, value }) {
         )}
         *
       </label>
-      <input onChange={(e) => handleChange(e.target.value)} value={value} />
+      <Input onChange={(e) => handleChange(e.target.value)} value={value} />
     </div>
   );
 }
+const Input = styled.input`
+  padding: 15px;
+  border: none;
+  border-radius: 2rem;
+  background: #eaeaea;
+`;
